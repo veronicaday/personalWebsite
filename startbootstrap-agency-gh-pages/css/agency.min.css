@@ -11,7 +11,7 @@ p {
   line-height: 1.75; }
 
 a {
-  color: #fed136; }
+  color: #000000; }
   a.active, a:active, a:focus, a:hover {
     color: #fec503; }
 
@@ -423,6 +423,18 @@ header.masthead {
     .timeline > li.timeline-inverted > .timeline-panel {
       padding: 0 100px 20px 20px; } }
 
+
+.img_company {
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
+}
+.img_company:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+
  .team-member {
   margin-bottom: 50px;
   text-align: center; }
@@ -458,7 +470,7 @@ header.masthead {
   left: 20%;
   text-align: center;
 }
-    .team-member:hover .team-member-content {
+.team-member:hover .team-member-content {
   display: block;
   text-align: center;
 }
@@ -475,6 +487,11 @@ header.masthead {
       left: 10px;
 }
 
+.text{
+    background-color: yellow;
+    float: left; 
+    display: none;    
+}
 
 section#contact {
   background-color: #887e88;

@@ -317,16 +317,38 @@ header.masthead {
       width: 100%;
       padding: 0 20px 0 100px;
       text-align: left; }
+
+      .timeline > li .timeline-panel-right {
+      position: relative;
+      float: right;
+      width: 100%;
+      padding: 0 20px 0 100px;
+      text-align: right; }
+
       .timeline > li .timeline-panel:before {
         right: auto;
         left: -15px;
         border-right-width: 15px;
         border-left-width: 0; }
+
+        .timeline > li .timeline-panel-right:before {
+        right: 15px;
+        left: auto;
+        border-right-width: 0;
+        border-left-width: -15px; }
+
       .timeline > li .timeline-panel:after {
         right: auto;
         left: -14px;
         border-right-width: 14px;
         border-left-width: 0; }
+
+        .timeline > li .timeline-panel-right:after {
+        right: -14px;
+        left: auto;
+        border-right-width: 0;
+        border-left-width: 14px; }
+
     .timeline > li .timeline-image {
       position: absolute;
       z-index: 100;
@@ -347,16 +369,36 @@ header.masthead {
       float: right;
       padding: 0 20px 0 100px;
       text-align: left; }
+
+    .timeline > li.timeline-inverted > .timeline-panel-right {
+      float: left;
+      padding: 0 20px 0 100px;
+      text-align: left; }
+
       .timeline > li.timeline-inverted > .timeline-panel:before {
         right: auto;
         left: -15px;
         border-right-width: 15px;
         border-left-width: 0; }
+
+       .timeline > li.timeline-inverted > .timeline-panel-right:before {
+        right: -15px;
+        left: auto;
+        border-right-width: 0;
+        border-left-width: 15px; }
+
       .timeline > li.timeline-inverted > .timeline-panel:after {
         right: auto;
         left: -14px;
         border-right-width: 14px;
         border-left-width: 0; }
+
+      .timeline > li.timeline-inverted > .timeline-panel-right:after {
+        right: -14px;
+        left: auto;
+        border-right-width: 0;
+        border-left-width: 14px; }
+
     .timeline > li:last-child {
       margin-bottom: 0; }
   .timeline .timeline-heading h4 {
@@ -379,6 +421,13 @@ header.masthead {
       width: 41%;
       padding: 0 20px 20px 30px;
       text-align: right; }
+
+    .timeline > li .timeline-panel-right {
+      float: right;
+      width: 41%;
+      padding: 0 20px 20px 30px;
+      text-align: left; }
+
     .timeline > li .timeline-image {
       left: 50%;
       width: 100px;

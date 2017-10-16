@@ -289,6 +289,17 @@ header.masthead {
   display: none;
   opacity: 0; }
 
+.dots{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: white;
+  padding:0;
+  margin:0;
+  position: absolute;
+}
+
+
 .timeline {
   position: relative;
   padding: 0;
@@ -484,6 +495,7 @@ header.masthead {
 }
 
 
+
  .team-member {
   margin-bottom: 50px;
   text-align: center; }
@@ -544,9 +556,10 @@ header.masthead {
 
 section#contact {
   background-color: #887e88;
-  background-image: url("../img/map-image.png");
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+  position: relative;
+   }
   section#contact .section-heading {
     color: black; }
   section#contact .form-group {

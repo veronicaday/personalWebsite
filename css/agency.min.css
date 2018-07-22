@@ -246,7 +246,7 @@ header.masthead {
     font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
   .portfolio-modal .modal-content ul.list-inline {
     margin-top: 0;
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
 	}
   .portfolio-modal .modal-content img {
     margin-bottom: 30px; }
@@ -289,16 +289,6 @@ header.masthead {
   display: none;
   opacity: 0; }
 
-.dots{
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  background-color: white;
-  padding:0;
-  margin:0;
-  position: absolute;
-}
-
 
 .timeline {
   position: relative;
@@ -312,7 +302,7 @@ header.masthead {
     width: 2px;
     margin-left: -1.5px;
     content: '';
-    background-color: #f1f1f1; }
+    background-color: #cccccc; }
   .timeline > li {
     position: relative;
     min-height: 50px;
@@ -371,11 +361,15 @@ header.masthead {
       color: white;
       border: 7px solid #f1f1f1;
       border-radius: 100%;
-      background-color: white; }
+      background-color: white;
+      cursor: pointer;}
       .timeline > li .timeline-image h4 {
         font-size: 10px;
         line-height: 14px;
         margin-top: 12px; }
+     .timeline > li .timeline-image{
+             box-shadow: 7px 20px 20px lightgrey;
+     }
     .timeline > li.timeline-inverted > .timeline-panel {
       float: right;
       padding: 0 20px 0 100px;
@@ -443,7 +437,8 @@ header.masthead {
       left: 50%;
       width: 100px;
       height: 100px;
-      margin-left: -50px; }
+      margin-left: -50px;
+       }
       .timeline > li .timeline-image h4 {
         font-size: 13px;
         line-height: 18px;
@@ -550,8 +545,8 @@ header.masthead {
 
 .text{
     background-color: yellow;
-    float: left; 
-    display: none;    
+    float: left;
+    display: none;
 }
 
 section#contact {
@@ -559,21 +554,11 @@ section#contact {
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
+  padding-top: 60px;
+  padding-bottom: 60px;
    }
   section#contact .section-heading {
     color: black; }
-  section#contact .form-group {
-    margin-bottom: 25px; }
-    section#contact .form-group input,
-    section#contact .form-group textarea {
-      padding: 20px; }
-    section#contact .form-group input.form-control {
-      height: auto; }
-    section#contact .form-group textarea.form-control {
-      height: 236px; }
-  section#contact .form-control:focus {
-    border-color: #fed136;
-    box-shadow: none; }
   section#contact ::-webkit-input-placeholder {
     font-weight: 700;
     color: #eeeeee;
@@ -600,7 +585,7 @@ section#contact {
     color: #e74c3c; }
 
 footer {
-  padding: 25px 0;
+  padding: 5px 0;
   text-align: center; }
   footer span.copyright {
     font-size: 90%;
@@ -719,3 +704,5 @@ ul.social-buttons {
   .btn-xl .badge {
     color: #fed136;
     background-color: white; }
+
+
